@@ -1,10 +1,7 @@
 services:
     # decorate the oro_catalog.layout.data_provider.featured_categories service
-    featured_category_provider_decorator:
+    oro_catalog.layout.data_provider.featured_categories:
         class: AppBundle\Layout\DataProvider\FeaturedCategoriesProvider
-        decorates: oro_catalog.layout.data_provider.featured_categories
-        arguments:
-            - '@featured_category_provider_decorator.inner'
 
     event_listener.increase_rounded_number:
         class: AppBundle\EventListener\IncreaseRoundedNumberListener
